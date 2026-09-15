@@ -1,4 +1,5 @@
-```Project Structure
+Project Structure
+```
    ├── main.py              # FastAPI Proxy Interceptor Source Code
    ├── Dockerfile           # Gateway Container Specs
    ├── docker-compose.yml   # Multi-Container Topology (WAF + Honeypot)
