@@ -10,7 +10,7 @@ Project Structure
 ```Run with Docker Compose
 #Build and start services in detached mode
 ```
-docker compose up --build -d
+```docker compose up --build -d```
 
 ```#Verify running containers
 docker ps
