@@ -12,20 +12,20 @@ Project Structure
 ```
 ```docker compose up --build -d```
 
-```#Verify running containers
-docker ps
-```
+#Verify running containers
+   ```docker ps```
 
-```#Stream live interception logs
-docker compose logs -f
-```
-```#Stop and tear down environment
-docker compose down
-```
+#Stream live interception logs
+   ```docker compose logs -f```
+
+#Stop and tear down environment
+   ```docker compose down```
+   
 ---------------------------------------------------------------------------
 Testing Interception
 Test incoming HTTP requests against the Gateway using curl:
-1. Normal GET Request Test:
-   ```curl http://localhost:8000/api/v1/status```
+
+  1. Normal GET Request Test:
+      ```curl http://localhost:8000/api/v1/status```
    2. POST Payload Interception Test:
-   ```curl -X POST http://localhost:8000/login -d "username=admin' OR 1=1--"```
+      ```curl -X POST http://localhost:8000/login -d "username=admin' OR 1=1--"```
